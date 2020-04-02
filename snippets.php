@@ -11,6 +11,18 @@ function method1($a,$b)
 usort($array, "method1");
 
 
+// Exclude category from array set
+
+$events_array = $events->get_events(array(
+    'mallID' => MALL_ID,
+    'limit' => 20
+));
+
+//Exclude Category name
+$events_array  = array_filter($events_array, function ($varCat) {
+    return ($varCat['category'] != 'COVID-19');
+});
+
 
 
 
