@@ -24,6 +24,11 @@ $events_array  = array_filter($events_array, function ($varCat) {
 });
 
 
+//REDEFINE PHP CONSTANT
+
+define('CLIENT_ID', '1000',true); //Add 3 param true
+define('CLIENT_ID', '1419'); //Redefine where you want to use it
+
 
 
 
