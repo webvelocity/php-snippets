@@ -30,6 +30,14 @@ define('CLIENT_ID', '1000',true); //Add 3 param true
 define('CLIENT_ID', '1419'); //Redefine where you want to use it
 
 
+//READ IMAGES FROM FOLDER
+
+
+$dirname = "assets/images/body-corporates-logos/";
+$images = glob($dirname."*.jpg");
+foreach($images as $image):?>
+echo "$images";
+endforeach;
 
 
 
