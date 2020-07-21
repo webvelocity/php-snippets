@@ -41,8 +41,8 @@ endforeach;
 
 
 
-
-
+//REMOVE EMPTY TAGS 
+$regx = "/<[^\/>]*>([\s]?)*<\/[^>]*>/"; //Remove empty tags from 
 
 
 
