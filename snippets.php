@@ -45,6 +45,10 @@ endforeach;
 $regx = "/<[^\/>]*>([\s]?)*<\/[^>]*>/"; //Remove empty tags from 
 
 
+	
+//SORT ARRAY BY COLUMN
+	
+array_multisort( array_column($videos_array, "title"), SORT_ASC, $videos_array );
 
 
 
